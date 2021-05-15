@@ -3,11 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Kerschhofer - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Daniel K - Portfolio</title>
 </head>
 <body>
+
+<!-- Navigation bar -->
+<div class="navbar" style="border: 2px solid;">
+    <a href="javascript:void(0);" class="icon" 
+    onclick="myFunction()">
+        <i class="material-icons">menu</i>
+        <!--<i class="fa fa-bars"></i>-->
+    </a>
     
-<h1>To be continued</h1>
+    <div id="navlinks">
+        <a href="#">HOME</a>
+        <a href='#'>ABOUT</a>
+        <a href='#'>PORTFOLIO</a>
+        <a href='#'>CONTACT</a>
+    </div>
+    
+
+    
+</div>
+
+<div class="test">
+    <p id="demo">Hello World</p>
+</div>
+
+
+<!-- Header -->
+<div class="header">
+    <h1>DANIEL K</h1>
+    <h1>Engineer & Coder</h1>
+</div>
+
+
+<!-- About -->
+<div class="row">
+    <div class="about" style="border: 2px solid;">
+        <h1>ABOUT</h1>
+        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
+            If you are interested in a collaboration or simply want to have a chat, 
+            please reach out.</p>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="about" style="border: 2px solid;">
+        <h1>ABOUT</h1>
+        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
+            If you are interested in a collaboration or simply want to have a chat, 
+            please reach out.</p>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="about" style="border: 2px solid;">
+        <h1>ABOUT</h1>
+        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
+            If you are interested in a collaboration or simply want to have a chat, 
+            please reach out.</p>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="about" style="border: 2px solid;">
+        <h1>ABOUT</h1>
+        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
+            If you are interested in a collaboration or simply want to have a chat, 
+            please reach out.</p>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="about" style="border: 2px solid;">
+        <h1>ABOUT</h1>
+        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
+            If you are interested in a collaboration or simply want to have a chat, 
+            please reach out.</p>
+    </div>
+
+
+</div>
+
+
+<!-- Projects -->
+<div>
+    <h1>MY PRLOJECTS</h1>
+</div>
+<div class="row">
+    <div class="col-25" style="border: 2px solid;">
+        <p>Title:</p>
+    </div>
+    <div class="col-75" style="border: 2px solid;">
+        <p>Regression Models for Setting Vehicle Attributes</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-25" style="border: 2px solid;">
+        <p>Abstract:</p>
+    </div>
+    <div class="col-75" style="border: 2px solid;">
+        <p>In the early stages of the automotive development process a lot of effort goes into the specification of a consistent set of targets. In this context, a target can be anything from the vehicle’s price to a performance indicator such as top speed. Due to opposing economic and technological ambitions, conflicting vehicle targets are inevitable. This work investigates data-driven models on their potential for supporting the target definition process. The focus is here on vehicle attributes of high relevance to consumers.
+            <br>
+            Vehicle characteristics that qualify as targets were selected from a database. They act as the supervisor in the respective machine learning problem. The underlying raw data underwent extensive data preparation to meet the requirements of an unbiased, high-quality dataset. Statistical tests were performed to assess the predictive power of single inputs before the multiple regression models were built using a forward selection technique. The output, a mathematical model for predicting a vehicle attribute based on dependent variables, can be further used for calculating all possible solutions. By combining all possible solutions of all models, a solution space could be created that outlines all technological feasible options. This concept was examined with the available models in the sport utility vehicle segment and shows promising results.
+        </p>
+    </div>
+</div>
+
+
+
+<!-- CONTACT -->
+
+
+
+
+<!-- Footer -->
+<div class="footer">
+    <p>2021 Daniel K</p>
+</div>
 
 </body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("navlinks");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    } 
+</script>
+
+<!--function myFunction() {
+        document.getElementById("demo").style.display="block";
+    }-->
 </html>

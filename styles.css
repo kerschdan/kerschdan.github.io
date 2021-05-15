@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar a {
+    display: block;
+}
+
+.navbar #navlinks {
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+#demo {
+    display: none;
+    border: 2px solid;
+}
+
+.header {
+    text-align: center;
+}
+
+.row {  
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+}
