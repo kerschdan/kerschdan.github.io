@@ -2,8 +2,17 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .navbar a {
     display: block;
+    color: #f2f2f2;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .navbar #navlinks {
@@ -12,23 +21,110 @@
 
 .navbar {
     position: fixed;
-    display: block;
+    z-index: +1;
     top: 0;
     left: 0;
+    width: 100%;
+    background-color: #333;
 }
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.header {
+    margin-top: 45px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: block;
+    background-color: #333;
+}
+
+/*Style for background image*/
+.header > div {
+    background-image: url(belvedere_palace.JPEG);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+}
+
+/*Style for text*/
+.header > div {
+    color: #f2f2f2;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 2.5vw;
+}
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+.about > div {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.projects {
+    background-color: #e2e0e0;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+.projects > div {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+#project1 {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#project2 {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact {
+    background-color: #cac8c8;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+
 
 #demo {
     display: none;
     border: 2px solid;
 }
 
-.header {
-    text-align: center;
+#demo1 {
+    background: none;
+    border: 2px solid;
 }
 
-.row {  
-    display: flex;
-}
 
 .footer {
     text-align: center;

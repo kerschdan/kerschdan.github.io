@@ -6,138 +6,113 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" 
     href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Daniel K - Portfolio</title>
+    <title>Daniel Kerschhofer - Portfolio</title>
 </head>
 <body>
 
 <!-- Navigation bar -->
-<div class="navbar" style="border: 2px solid;">
+<div class="navbar">
     <a href="javascript:void(0);" class="icon" 
     onclick="myFunction()">
         <i class="material-icons">menu</i>
-        <!--<i class="fa fa-bars"></i>-->
     </a>
     
     <div id="navlinks">
-        <a href="#">HOME</a>
-        <a href='#'>ABOUT</a>
-        <a href='#'>PORTFOLIO</a>
-        <a href='#'>CONTACT</a>
+        <a href="#home">HOME</a>
+        <a href='#about'>ABOUT</a>
+        <a href='#projects'>PORTFOLIO</a>
+        <a href='#contact'>CONTACT</a>
     </div>
-    
-
-    
-</div>
-
-<div class="test">
-    <p id="demo">Hello World</p>
 </div>
 
 
 <!-- Header -->
-<div class="header">
-    <h1>DANIEL K</h1>
-    <h1>Engineer & Coder</h1>
+<div class="header" id="home">
+    <div>
+        <h1>DANIEL KERSCHHOFER</h1>
+        <h2>Engineer & Coder</h2>
+    </div>
+    
 </div>
 
 
 <!-- About -->
-<div class="row">
-    <div class="about" style="border: 2px solid;">
-        <h1>ABOUT</h1>
-        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
-            If you are interested in a collaboration or simply want to have a chat, 
-            please reach out.</p>
+<div class="about" id="about">
+    <div>
+        <h1>ABOUT<br><br></h1>
     </div>
-
-
+    <div>
+        <h3>Hi, I'm Daniel. </h3>
+        <p>I have devoted this website to document 
+            my recent work. </p>
+    </div>
 </div>
 
-<div class="row">
-    <div class="about" style="border: 2px solid;">
-        <h1>ABOUT</h1>
-        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
-            If you are interested in a collaboration or simply want to have a chat, 
-            please reach out.</p>
-    </div>
 
-
-</div>
-
-<div class="row">
-    <div class="about" style="border: 2px solid;">
-        <h1>ABOUT</h1>
-        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
-            If you are interested in a collaboration or simply want to have a chat, 
-            please reach out.</p>
-    </div>
-
-
-</div>
-
-<div class="row">
-    <div class="about" style="border: 2px solid;">
-        <h1>ABOUT</h1>
-        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
-            If you are interested in a collaboration or simply want to have a chat, 
-            please reach out.</p>
-    </div>
-
-
-</div>
-
-<div class="row">
-    <div class="about" style="border: 2px solid;">
-        <h1>ABOUT</h1>
-        <p>Hi, I'm Daniel. I have devoted this website to document my recent work. 
-            If you are interested in a collaboration or simply want to have a chat, 
-            please reach out.</p>
-    </div>
-
-
-</div>
 
 
 <!-- Projects -->
-<div>
-    <h1>MY PRLOJECTS</h1>
-</div>
-<div class="row">
-    <div class="col-25" style="border: 2px solid;">
-        <p>Title:</p>
+<div class="projects" id="projects">
+    <div>
+        <h1>MY PROJECTS<br><br></h1>
     </div>
-    <div class="col-75" style="border: 2px solid;">
-        <p>Regression Models for Setting Vehicle Attributes</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-25" style="border: 2px solid;">
-        <p>Abstract:</p>
-    </div>
-    <div class="col-75" style="border: 2px solid;">
+    <div id="project1">
+        <h3>Master's Thesis</h3>
+        <h4>Regression Models for Setting Vehicle Attributes</h4>
         <p>In the early stages of the automotive development process a lot of effort goes into the specification of a consistent set of targets. In this context, a target can be anything from the vehicle’s price to a performance indicator such as top speed. Due to opposing economic and technological ambitions, conflicting vehicle targets are inevitable. This work investigates data-driven models on their potential for supporting the target definition process. The focus is here on vehicle attributes of high relevance to consumers.
             <br>
             Vehicle characteristics that qualify as targets were selected from a database. They act as the supervisor in the respective machine learning problem. The underlying raw data underwent extensive data preparation to meet the requirements of an unbiased, high-quality dataset. Statistical tests were performed to assess the predictive power of single inputs before the multiple regression models were built using a forward selection technique. The output, a mathematical model for predicting a vehicle attribute based on dependent variables, can be further used for calculating all possible solutions. By combining all possible solutions of all models, a solution space could be created that outlines all technological feasible options. This concept was examined with the available models in the sport utility vehicle segment and shows promising results.
         </p>
     </div>
+    <div id="project2">
+        <h3>New Project</h3>
+        <p>...</p>
+    </div>
+
 </div>
 
 
+<!--
+<div>
+    <p id="demo">Hello World</p>
+</div>
+<div>
+    <p id="demo1">What's up</p>
+</div>
+-->
 
 <!-- CONTACT -->
-
+<div id="contact">
+    <h1>CONTACT</h1>
+    <p>If you are interested in a collaboration or simply want to have a chat, 
+        please reach out.
+    </p>
+</div>
 
 
 
 <!-- Footer -->
 <div class="footer">
-    <p>2021 Daniel K</p>
+    <p>2021 Daniel Kerschhofer</p>
 </div>
 
 </body>
 
 <script>
+    var prevScrollPos = window.pageYOffset;
+    window.onscroll = function() {
+        var currScrollPos = window.pageYOffset;
+        document.getElementById("demo").style.display="block";
+        if (prevScrollPos>currScrollPos) {
+            //document.getElementById("demo1").style.background="green";
+            document.getElementById("navlinks").style.display="none";
+        } else {
+            //document.getElementById("demo1").style.background="red";
+            document.getElementById("navlinks").style.display="none";
+        }
+        prevScrollPos=currScrollPos;
+    }
+
     function myFunction() {
         var x = document.getElementById("navlinks");
         if (x.style.display == "block") {
@@ -147,8 +122,4 @@
         }
     } 
 </script>
-
-<!--function myFunction() {
-        document.getElementById("demo").style.display="block";
-    }-->
 </html>
