@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    background-color: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -62,29 +61,22 @@ body {
 }
 
 .about {
+    background-color: #e2e0e0;
     padding-top: 50px;
     padding-bottom: 250px;
-}
-
-.about > div {
-    color: black;
     text-align: center;
     font-size: 25px;
 }
 
 .projects {
-    background-color: #e2e0e0;
+    background-color: #f1f1f1;
     padding-top: 50px;
     padding-bottom: 250px;
-}
-
-.projects > div {
-    color: black;
     text-align: center;
     font-size: 25px;
 }
 
-#project1 {
+.project1 {
     text-align: left;
     margin-left: 50px;
     margin-right: 50px;
@@ -93,6 +85,15 @@ body {
     padding-top: 2px;
     padding-bottom: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project1 .heading {
+    background-color: #e2e0e0;
+}
+
+.project1 .text {
+    height: 150px;
+    overflow: hidden;
 }
 
 #project2 {
@@ -107,13 +108,22 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.contact {
-    background-color: #cac8c8;
-    padding-top: 50px;
-    padding-bottom: 250px;
+.read-more {
+    cursor: pointer;
+    background-color: cadetblue;
+    font-size: 20px;
+    padding: 8px;
+    margin: 4px;
+    display: inline-block;
 }
 
-
+.contact {
+    background-color: #cccaca;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    text-align: center;
+    font-size: 25px;
+}
 
 #demo {
     display: none;

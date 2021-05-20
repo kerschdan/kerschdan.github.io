@@ -56,21 +56,33 @@
     <div>
         <h1>MY PROJECTS<br><br></h1>
     </div>
-    <div id="project1">
-        <h3>Master's Thesis</h3>
-        <h4>Regression Models for Setting Vehicle Attributes</h4>
-        <p>In the early stages of the automotive development process a lot of effort goes into the specification of a consistent set of targets. In this context, a target can be anything from the vehicle’s price to a performance indicator such as top speed. Due to opposing economic and technological ambitions, conflicting vehicle targets are inevitable. This work investigates data-driven models on their potential for supporting the target definition process. The focus is here on vehicle attributes of high relevance to consumers.
-            <br>
-            Vehicle characteristics that qualify as targets were selected from a database. They act as the supervisor in the respective machine learning problem. The underlying raw data underwent extensive data preparation to meet the requirements of an unbiased, high-quality dataset. Statistical tests were performed to assess the predictive power of single inputs before the multiple regression models were built using a forward selection technique. The output, a mathematical model for predicting a vehicle attribute based on dependent variables, can be further used for calculating all possible solutions. By combining all possible solutions of all models, a solution space could be created that outlines all technological feasible options. This concept was examined with the available models in the sport utility vehicle segment and shows promising results.
-        </p>
+
+
+    <div class="project1">
+        <div class="heading">
+            <h4>Master's Thesis: Regression Models for Setting Vehicle Attributes</h4>
+        </div>
+
+        <div class="text" id="text">
+            <p>In the early stages of the automotive development process a lot of effort goes into the specification of a consistent set of targets. In this context, a target can be anything from the vehicle’s price to a performance indicator such as top speed. Due to opposing economic and technological ambitions, conflicting vehicle targets are inevitable. This work investigates data-driven models on their potential for supporting the target definition process. The focus is here on vehicle attributes of high relevance to consumers.
+                <br>
+                Vehicle characteristics that qualify as targets were selected from a database. They act as the supervisor in the respective machine learning problem. The underlying raw data underwent extensive data preparation to meet the requirements of an unbiased, high-quality dataset. Statistical tests were performed to assess the predictive power of single inputs before the multiple regression models were built using a forward selection technique. The output, a mathematical model for predicting a vehicle attribute based on dependent variables, can be further used for calculating all possible solutions. By combining all possible solutions of all models, a solution space could be created that outlines all technological feasible options. This concept was examined with the available models in the sport utility vehicle segment and shows promising results.
+            </p>
+        </div>
+
+        <div>
+            <span class="read-more" id="read-more" onclick="newFunct()">more</span>
+        </div>
+
     </div>
+
+
     <div id="project2">
-        <h3>New Project</h3>
+        <h4>New Project</h4>
         <p>...</p>
     </div>
 
 </div>
-
 
 <!--
 <div>
@@ -82,7 +94,7 @@
 -->
 
 <!-- CONTACT -->
-<div id="contact">
+<div class="contact">
     <h1>CONTACT</h1>
     <p>If you are interested in a collaboration or simply want to have a chat, 
         please reach out.
@@ -102,7 +114,7 @@
     var prevScrollPos = window.pageYOffset;
     window.onscroll = function() {
         var currScrollPos = window.pageYOffset;
-        document.getElementById("demo").style.display="block";
+        //document.getElementById("demo").style.display="block";
         if (prevScrollPos>currScrollPos) {
             //document.getElementById("demo1").style.background="green";
             document.getElementById("navlinks").style.display="none";
@@ -110,7 +122,7 @@
             //document.getElementById("demo1").style.background="red";
             document.getElementById("navlinks").style.display="none";
         }
-        prevScrollPos=currScrollPos;
+        prevScrollPos = currScrollPos;
     }
 
     function myFunction() {
@@ -121,5 +133,14 @@
             x.style.display = "block";
         }
     } 
+
+    function newFunct() {
+        var x = document.getElementById("text");
+        if (x.style.height == "150px") {
+            x.style.height = "auto";
+        } else {
+            x.style.height = "150px";
+        }
+    }
 </script>
 </html>
