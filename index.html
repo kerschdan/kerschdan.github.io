@@ -13,7 +13,7 @@
 <!-- Navigation bar -->
 <div class="navbar">
     <a href="javascript:void(0);" class="icon" 
-    onclick="myFunction()">
+    onclick="navFunction()">
         <i class="material-icons">menu</i>
     </a>
     
@@ -49,8 +49,6 @@
 </div>
 
 
-
-
 <!-- Projects -->
 <div class="projects" id="projects">
     <div>
@@ -59,53 +57,73 @@
 
 
     <div class="project1">
-        <div class="heading">
-            <h4>Master's Thesis: Regression Models for Setting Vehicle Attributes</h4>
+        <div class="logo">
+            <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" 
+            id="pythonlogo" alt="Python">
         </div>
 
-        <div class="text" id="text">
+        <div class="content" id="content_thesis">
+            <h4>Master's Thesis: Regression Models for Setting Vehicle Attributes</h4>
+            <h5>Dec 2019 - Dec 2020</h5>
             <p>In the early stages of the automotive development process a lot of effort goes into the specification of a consistent set of targets. In this context, a target can be anything from the vehicle’s price to a performance indicator such as top speed. Due to opposing economic and technological ambitions, conflicting vehicle targets are inevitable. This work investigates data-driven models on their potential for supporting the target definition process. The focus is here on vehicle attributes of high relevance to consumers.
                 <br>
                 Vehicle characteristics that qualify as targets were selected from a database. They act as the supervisor in the respective machine learning problem. The underlying raw data underwent extensive data preparation to meet the requirements of an unbiased, high-quality dataset. Statistical tests were performed to assess the predictive power of single inputs before the multiple regression models were built using a forward selection technique. The output, a mathematical model for predicting a vehicle attribute based on dependent variables, can be further used for calculating all possible solutions. By combining all possible solutions of all models, a solution space could be created that outlines all technological feasible options. This concept was examined with the available models in the sport utility vehicle segment and shows promising results.
             </p>
+            <a href="https://online.tugraz.at/tug_online/wbAbs.showThesis?pThesisNr=72896&pOrgNr=&pPersNr=620#" target="_blank">
+            TUGRAZonline
+            </a>
         </div>
-
+        
         <div>
-            <span class="read-more" id="read-more" onclick="newFunct()">more</span>
+            <span id="more" onclick="expandFunct()">+ more</span>
         </div>
 
     </div>
 
 
-    <div id="project2">
+    <div class="project2">
         <h4>New Project</h4>
+        <h5>May 2021 - June 2021</h5>
         <p>...</p>
     </div>
 
 </div>
 
-<!--
-<div>
-    <p id="demo">Hello World</p>
-</div>
-<div>
-    <p id="demo1">What's up</p>
-</div>
--->
 
 <!-- CONTACT -->
-<div class="contact">
+<div class="contact" id="contact">
     <h1>CONTACT</h1>
     <p>If you are interested in a collaboration or simply want to have a chat, 
         please reach out.
     </p>
+
+    <div class="email">
+        <p><img src="iconmonstr-email-2.svg">
+            <span id="email">moc.liamg@refohhcsrek.d</span></p>
+    </div>
+    
+    <div class="socialmedia">
+        <ul class="socialmedia_icons">
+            <li>
+                <a href="https://linkedin.com/in/daniel-kerschhofer-492611ab" target="_blank">
+                    <img id="linkedin" src="LI-In-Bug.png" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/kerschdan" target="_blank">
+                    <img id="github" src="GitHub-Mark-120px-plus.png" alt="GitHub">
+                </a>
+            </li>
+        </ul>
+    </div>
+    
 </div>
 
 
 
 <!-- Footer -->
 <div class="footer">
-    <p>2021 Daniel Kerschhofer</p>
+    <p>&#169 <b>2021</b> Daniel Kerschhofer</p>
 </div>
 
 </body>
@@ -114,18 +132,15 @@
     var prevScrollPos = window.pageYOffset;
     window.onscroll = function() {
         var currScrollPos = window.pageYOffset;
-        //document.getElementById("demo").style.display="block";
         if (prevScrollPos>currScrollPos) {
-            //document.getElementById("demo1").style.background="green";
             document.getElementById("navlinks").style.display="none";
         } else {
-            //document.getElementById("demo1").style.background="red";
             document.getElementById("navlinks").style.display="none";
         }
         prevScrollPos = currScrollPos;
     }
 
-    function myFunction() {
+    function navFunction() {
         var x = document.getElementById("navlinks");
         if (x.style.display == "block") {
             x.style.display = "none";
@@ -134,13 +149,11 @@
         }
     } 
 
-    function newFunct() {
-        var x = document.getElementById("text");
-        if (x.style.height == "150px") {
-            x.style.height = "auto";
-        } else {
-            x.style.height = "150px";
-        }
+    function expandFunct() {
+        var x = document.getElementById("content_thesis");
+        x.style.height = "800px";
+        var y = document.getElementById("more");
+        y.style.display = "none";
     }
 </script>
 </html>

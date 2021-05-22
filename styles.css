@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
 }
 
 .navbar a {
@@ -61,7 +62,7 @@ body {
 }
 
 .about {
-    background-color: #e2e0e0;
+    background-color: #c4c3c3;
     padding-top: 50px;
     padding-bottom: 250px;
     text-align: center;
@@ -69,7 +70,7 @@ body {
 }
 
 .projects {
-    background-color: #f1f1f1;
+    background-color: #e6e3e3;
     padding-top: 50px;
     padding-bottom: 250px;
     text-align: center;
@@ -80,23 +81,44 @@ body {
     text-align: left;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 2px;
-    padding-bottom: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project1 .heading {
-    background-color: #e2e0e0;
+.project1 .logo {
+    width: 15%;
+    float: left;
 }
 
-.project1 .text {
-    height: 150px;
+#pythonlogo {
+    width: 90%;
+    padding-top: 60px;
+}
+
+.project1 .content {
+    padding-bottom: 20px;
+    height: 200px;
     overflow: hidden;
+    width: 85%;
+    float: left;
 }
 
-#project2 {
+h5 {
+    color: rgb(95, 94, 94);
+}
+
+#more {
+    cursor: pointer;
+    color: cadetblue;
+    font-size: 20px;
+    padding: 8px;
+    margin: 4px;
+    display: inline-block;
+}
+
+.project2 {
     text-align: left;
     margin-top: 20px;
     margin-left: 50px;
@@ -108,34 +130,56 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.read-more {
-    cursor: pointer;
-    background-color: cadetblue;
-    font-size: 20px;
-    padding: 8px;
-    margin: 4px;
-    display: inline-block;
-}
-
 .contact {
-    background-color: #cccaca;
+    background-color: #f7f7f7;
     padding-top: 50px;
     padding-bottom: 250px;
     text-align: center;
     font-size: 25px;
 }
 
-#demo {
-    display: none;
-    border: 2px solid;
+.email {
+    margin-top: 125px;
 }
 
-#demo1 {
-    background: none;
-    border: 2px solid;
+#email {
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
 
+.socialmedia {
+    margin-top: 25px;
+}
+
+ul .socialmedia_icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socialmedia_icons li {
+    display: inline-block;
+    padding-top: 24px;
+    padding-right: 40px;
+    transition: transform 0.4s;
+}
+
+#linkedin {
+    /*max-width: initial;*/
+    /*min-height: 21px;*/
+    height: 45px;
+}
+
+#github {
+    height: 45px;
+}
+
+.socialmedia_icons li:hover {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+}
 
 .footer {
+    color: white;
     text-align: center;
 }
