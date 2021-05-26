@@ -87,22 +87,11 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project1 .logo {
-    width: 15%;
-    float: left;
-}
-
-#pythonlogo {
-    width: 90%;
-    padding-top: 60px;
-}
 
 .project1 .content {
     padding-bottom: 20px;
     height: 200px;
     overflow: hidden;
-    width: 85%;
-    float: left;
 }
 
 h5 {
@@ -182,4 +171,15 @@ ul .socialmedia_icons {
 .footer {
     color: white;
     text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+    .project1 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .project2 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }

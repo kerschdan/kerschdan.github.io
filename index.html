@@ -57,11 +57,6 @@
 
 
     <div class="project1">
-        <div class="logo">
-            <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" 
-            id="pythonlogo" alt="Python">
-        </div>
-
         <div class="content" id="content_thesis">
             <h4>Master's Thesis: Regression Models for Setting Vehicle Attributes</h4>
             <h5>Dec 2019 - Dec 2020</h5>
@@ -151,7 +146,8 @@
 
     function expandFunct() {
         var x = document.getElementById("content_thesis");
-        x.style.height = "800px";
+        x.style.height = "670px";
+        x.style.overflow = "auto";
         var y = document.getElementById("more");
         y.style.display = "none";
     }
