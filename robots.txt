@@ -1,0 +1,4 @@
+# Welcome to my robots.txt file:
+
+User-agent: EmailCollector
+Disallow: /
