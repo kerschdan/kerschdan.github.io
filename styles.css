@@ -77,8 +77,22 @@ body {
     font-size: 25px;
 }
 
-.project1 {
+.project3 {
     text-align: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project2 {
+    text-align: left;
+    margin-top: 20px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
@@ -88,7 +102,7 @@ body {
 }
 
 
-.project1 .content {
+.project2 .content {
     padding-bottom: 20px;
     height: 200px;
     overflow: hidden;
@@ -107,7 +121,7 @@ h5 {
     display: inline-block;
 }
 
-.project2 {
+.project1 {
     text-align: left;
     margin-top: 20px;
     margin-left: 50px;
@@ -182,4 +196,9 @@ ul .socialmedia_icons {
         margin-left: 5px;
         margin-right: 5px;
     }
+    .project3 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
 }
